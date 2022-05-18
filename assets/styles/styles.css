@@ -17,7 +17,7 @@ ul {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.container div {
+.container > div {
   padding: 20px;
 }
 
@@ -38,16 +38,9 @@ ul {
   font-weight: bold;
 }
 
-.sidebar h1,
-.sidebar ul {
-  margin-bottom: 1.5rem;
-}
-
 .projects {
-  display: grid;
   grid-column: 2 / 4;
   grid-row: 2 / 4;
-  gap: 25px;
 }
 
 .cards {
@@ -56,12 +49,14 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.feed {
+  grid-row: 2 / 4;
+}
+
 .trending {
   background-color: purple;
-  grid-row: 3 / 4;
 }
 
 .announcements {
   background-color: yellow;
-  grid-row: 2 / 3;
 }
