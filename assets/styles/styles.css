@@ -26,7 +26,7 @@ ul {
   grid-column: 2 / 5;
 }
 
-.header div {
+.header > div {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
