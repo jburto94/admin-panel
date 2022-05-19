@@ -29,10 +29,6 @@ ul {
   gap: 25px;
 }
 
-/* .header > div {
-  display: grid;
-} */
-
 .sidebar {
   display: grid;
   grid-template-columns: 1fr;
@@ -55,10 +51,49 @@ ul {
   grid-row: 2 / 4;
 }
 
-.trending {
-  background-color: purple;
+@media (max-width: 991px) {
+  .container-full {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .projects {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .feed {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .profile.items-end {
+    align-items: flex-start;
+  }
 }
 
-.announcements {
-  background-color: yellow;
+@media (max-width: 767px) {
+  .container-full,
+  .feed,
+  .header,
+  .projects {
+    grid-column: 1;
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    grid-row: 4;
+  }
+
+  .profile-self {
+    order: 2;
+  }
+
+  .profile-btns {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .search input {
+    margin-bottom: 20px;
+  }
 }
