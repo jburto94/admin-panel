@@ -13,12 +13,12 @@ ul {
   list-style-type: none;
 }
 
-.container {
+.container-full {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.container > div {
+.container-full > div {
   padding: 20px;
 }
 
